@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "callnr.h": "c",
+        "stdlib.h": "c"
+    }
+}
