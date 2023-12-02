@@ -30,4 +30,4 @@ Uwagi do kodu:
 
 - kod wkładający proces do kolejki procesów z funkcji 'ready()' z kernel/proc.c jest powtórzony w taskcallu 'do_setgroup' w pliku kernel/system.c,
   nie chciałem już tego dotykać póki wszystko działało
-- testy zostać przeprowadzone przez robienie procesów poleceniem './seepid &' oraz './tstsetgroup pid_nr group_nr', te pliki wykonywalne są robione przez odpalenie './make_exe.sh'
+- testy zostaną przeprowadzone przez robienie procesów poleceniem './seepid &' oraz './tstsetgroup pid_nr group_nr', te pliki wykonywalne są robione przez odpalenie './make_exe.sh'
