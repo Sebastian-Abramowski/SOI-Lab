@@ -1,0 +1,47 @@
+Obserwacje po wykonaniu testów:
+testy były wykonywane po czyszczeniu pamięci współdzielonej;
+
+Pomiary przez 25 sekund:
+client 1 sekunda - kolejka Orders jest stale przepełniona, czasy obrobienia zlecenia są rzędu (8, 9, 10, 12)
+
+client 2 sekundy - kolejka Orders jest stale przepełniona, czasy obrobienia zlecenia są rzędu (6, 7, 8, 9, 10)
+
+client 2.5 sekudny - kolejka Orders jest stale przepełniona, czasy obrobienia zlecenia są rzędu (8, 9, 10) sekund
+
+client 2.6 sekudny - kolejka Orders jest rzadko przepełniona, czasy obrobienia zlecenia są rzędu (4, 5, 6) sekund
+
+client 2.8 sekundy - kolejka Orders jest nieprzpełniana, czasy obrobienia zlecenie są rzędu (4, 5, 6) sekund
+
+Pomiary przez 50 sekund (bo dla 25 sekund, kolejki Orders przestają być przepełnione) - zmiana warunków pomiarów:
+client 2.7 sekundy - kolejka Orders przepełnia się ale po dużo dłuższym czasie niż poprzednie pomiary, czasy obrobienia zlecenia są rzędu (8, 9, 10) sekund
+
+client 3 sekundy - kolejka Orders przepełnia się, ale po jeszcze większym czasie, czasy obrobienia zlecenia są rzędu (7, 8, 9) sekund
+
+client 3.1 sekundy - kolejka Orders nieprzpełnia się, czasy obrobienia zlecenia są rzędu (5, 6, 7) sekund
+
+client 3.3 sekundy - kolejka Orders jest niedopełniana, czasy obrabiania zlecenia są rzędu (3, 4, 5) sekund
+
+W każdym przypadku kolejka Warehouse jest zawsze prawie pusta.
+
+----
+
+Odpowiedzi na pytania:
+1. Przy jakiej wartości parametru X przepustowość systemu staje się niewystarczająca (tzn. 
+kolejki się stale przepełniają)?
+
+Zależy to od tego ile czasu będziemy testować:
+Np.  dla testów trwiających 25 sekund - dla X < 2.9 s kolejka Orders była przepełniana
+     dla testów trwiających 50 sekuund - dla X < 3 s kolejka Orders była przepełniana
+     dla testów trwiających 100 sekund - dla X = 3.3 s kolejka Orders była w pojedycznych przypadkach przpełniana
+Wniosek: prędzej czy później kolejka Orders i tak się przepełni, chyba, że damy tak duże wartości odpoczynku dla klientów, że kolejka Warehouse przestanie być wąskim gardłem.
+
+2. Która kolejka okazuje się wąskim gardłem - kolejka zleceń, czy magazyn?
+
+Wąskim gardłem jest kolejka magazynu - prawie zawsze jest zapełniona w minimalnym stopniu, procesy wytwórzcze powinny szybciej przetwarzać pojedyncze zlecenie i wysyłać je do magazynu.
+
+3. Jak zależy czas obsługi (od zgłoszenia zlecenia do odbioru produktu przez kuriera) zleceń od 
+X?
+
+Im większy czas X (spanie clienta), tym mniejsze zapełnienie kolejki Orders, tym szybciej dane zlecenie zostanie obsłużone, trafi do magazynu i odebrane przez kuriera.
+Większe X -> mniejszy czas obsługi zleceń
+

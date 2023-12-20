@@ -1,0 +1,2 @@
+
+rm test_queue create_shared_memory show_queues client creation delivery delete_shared_memory

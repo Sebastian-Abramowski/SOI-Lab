@@ -1,0 +1,306 @@
+Warehouse queue shmid: 22
+Orders queue shmid: 23
+Tools queue shmid: 24
+Time of order queue shmid: 25
+Time of order queue2 shmid: 26
+
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 4 
+Time of order: Queue contents: 1703060389 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 4 
+Time of order: Queue contents: 1703060389 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 4 
+Time of order: Queue contents: 1703060389 
+Warehouse: Queue contents: 4 
+Time of order 2: Queue contents: 1703060389 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 
+Time of order: Queue contents: 
+Warehouse: Queue contents: 4 
+Time of order 2: Queue contents: 1703060389 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 
+Time of order: Queue contents: 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 
+Time of order: Queue contents: 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 4 4 
+Time of order: Queue contents: 1703060392 1703060392 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 4 4 
+Time of order: Queue contents: 1703060392 1703060392 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 4 4 
+Time of order: Queue contents: 1703060392 1703060392 
+Warehouse: Queue contents: 4 
+Time of order 2: Queue contents: 1703060392 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 4 
+Time of order: Queue contents: 1703060392 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 
+Time of order: Queue contents: 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 
+Time of order: Queue contents: 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 2 2 2 
+Time of order: Queue contents: 1703060395 1703060395 1703060395 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 2 2 
+Time of order: Queue contents: 1703060395 1703060395 
+Warehouse: Queue contents: 4 
+Time of order 2: Queue contents: 1703060392 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 2 2 
+Time of order: Queue contents: 1703060395 1703060395 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 2 
+Time of order: Queue contents: 1703060395 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 
+Time of order: Queue contents: 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 
+Time of order: Queue contents: 
+Warehouse: Queue contents: 2 
+Time of order 2: Queue contents: 1703060395 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 8 8 8 8 
+Time of order: Queue contents: 1703060398 1703060398 1703060398 1703060398 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 8 8 8 
+Time of order: Queue contents: 1703060398 1703060398 1703060398 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 8 8 
+Time of order: Queue contents: 1703060398 1703060398 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 8 8 
+Time of order: Queue contents: 1703060398 1703060398 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 8 
+Time of order: Queue contents: 1703060398 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 6 6 6 6 
+Time of order: Queue contents: 1703060401 1703060401 1703060401 1703060401 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 6 6 6 6 
+Time of order: Queue contents: 1703060401 1703060401 1703060401 1703060401 
+Warehouse: Queue contents: 8 
+Time of order 2: Queue contents: 1703060398 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 6 6 6 6 
+Time of order: Queue contents: 1703060401 1703060401 1703060401 1703060401 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 6 6 
+Time of order: Queue contents: 1703060401 1703060401 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 6 6 
+Time of order: Queue contents: 1703060401 1703060401 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 6 6 
+Time of order: Queue contents: 1703060401 1703060401 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 6 
+Time of order: Queue contents: 1703060401 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 7 7 7 7 
+Time of order: Queue contents: 1703060404 1703060404 1703060404 1703060404 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 7 7 7 7 
+Time of order: Queue contents: 1703060404 1703060404 1703060404 1703060404 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 7 7 7 
+Time of order: Queue contents: 1703060404 1703060404 1703060404 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 7 7 7 
+Time of order: Queue contents: 1703060404 1703060404 1703060404 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 7 7 
+Time of order: Queue contents: 1703060404 1703060404 
+Warehouse: Queue contents: 7 
+Time of order 2: Queue contents: 1703060404 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 7 7 8 8 8 8 
+Time of order: Queue contents: 1703060404 1703060404 1703060407 1703060407 1703060407 1703060407 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 8 8 8 8 
+Time of order: Queue contents: 1703060407 1703060407 1703060407 1703060407 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 8 8 8 8 
+Time of order: Queue contents: 1703060407 1703060407 1703060407 1703060407 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 8 8 8 8 
+Time of order: Queue contents: 1703060407 1703060407 1703060407 1703060407 
+Warehouse: Queue contents: 7 
+Time of order 2: Queue contents: 1703060404 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 8 8 8 8 
+Time of order: Queue contents: 1703060407 1703060407 1703060407 1703060407 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 8 8 
+Time of order: Queue contents: 1703060407 1703060407 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 8 8 4 4 
+Time of order: Queue contents: 1703060407 1703060407 1703060410 1703060410 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 8 4 4 4 8 
+Time of order: Queue contents: 1703060407 1703060410 1703060410 1703060410 1703060411 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 66 65 
+Orders: Queue contents: 8 4 4 4 8 
+Time of order: Queue contents: 1703060407 1703060410 1703060410 1703060410 1703060411 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 4 4 4 8 
+Time of order: Queue contents: 1703060410 1703060410 1703060410 1703060411 
+Warehouse: Queue contents: 8 
+Time of order 2: Queue contents: 1703060407 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 4 4 4 8 
+Time of order: Queue contents: 1703060410 1703060410 1703060410 1703060411 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 4 8 6 6 6 
+Time of order: Queue contents: 1703060410 1703060411 1703060413 1703060413 1703060413 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 4 8 6 6 6 6 
+Time of order: Queue contents: 1703060410 1703060411 1703060413 1703060413 1703060413 1703060413 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 4 8 6 6 6 6 
+Time of order: Queue contents: 1703060410 1703060411 1703060413 1703060413 1703060413 1703060413 
+Warehouse: Queue contents: 4 
+Time of order 2: Queue contents: 1703060410 
+---
+Tools: Queue contents: 65 66 
+Orders: Queue contents: 4 8 6 6 6 6 
+Time of order: Queue contents: 1703060410 1703060411 1703060413 1703060413 1703060413 1703060413 
+Warehouse: Queue contents: 
+Time of order 2: Queue contents: 

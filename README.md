@@ -30,4 +30,25 @@ Uwagi do kodu:
 
 - kod wkładający proces do kolejki procesów z funkcji 'ready()' z kernel/proc.c jest powtórzony w taskcallu 'do_setgroup' w pliku kernel/system.c,
   nie chciałem już tego dotykać póki wszystko działało
+- BATCH_GROUP (1) - grupa oznaczająca procesy wsadowe
 - testy zostaną przeprowadzone przez robienie procesów poleceniem './seepid &' oraz './tstsetgroup pid_nr group_nr', te pliki wykonywalne są robione przez odpalenie './make_exe.sh'
+
+Moje założenia:
+
+- jeśli zmieniamy grupe procesu, to traktujemy go jako nowy proces
+
+## Zad. 3 - synchronizacja procesów z wykorzystaniem semaforów
+
+Zadanie:
+
+- zasymuluj synchronizację pomiędzy klientami, który wytwarzają zlecenia i procesami wytwórczami, które te zlecenia wytwarzają
+- poza tym jest także proces kuriera, który odbiera co określony czas przetworzone zlecenia z magazynu
+- musisz korzystać z semaforów Linuxowych
+- trzeba także w jakiś sposób mieć dostęp do czasu przetworzenia zlecenie (od momentu przyjęcia zlecenia do odebrania przez kuriera)
+- przeprowadź odpowiednie testy, abyś był w stanie odpowiedzieć na trzy pytania dotyczące zadania znajdujące się pliku
+
+Konkretnie do wykonanego zadania:
+
+- zostały stworzone dodatkowe dwie dodatkowe kolejki:
+- TIME_OF_ORDER_IN - kolejka o tym indeksie przetrzymuje czasy przyjęcia zlecenia (jest zajęta w jednakowym stopniu jak kolejka Orders)
+- TIME_OF_ORDER_IN2 - kolejka o tym indeksie przetrzymuje czasy przyjęcia zlecenia, ale tych które został wyjęte z kolejki Orders (czyli są w trakcie przetwarzania) (jest zajęta w jednakowym stopniu jak kolejka Warehouse) - na jej podstawie można obliczyć całkowity czas przetwarzania zlecenia w sekundach, przykład wyników znajduje się w delivery_info.txt
