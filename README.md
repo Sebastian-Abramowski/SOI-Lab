@@ -52,3 +52,8 @@ Konkretnie do wykonanego zadania:
 - zostały stworzone dodatkowe dwie dodatkowe kolejki:
 - TIME_OF_ORDER_IN - kolejka o tym indeksie przetrzymuje czasy przyjęcia zlecenia (jest zajęta w jednakowym stopniu jak kolejka Orders)
 - TIME_OF_ORDER_IN2 - kolejka o tym indeksie przetrzymuje czasy przyjęcia zlecenia, ale tych które został wyjęte z kolejki Orders (czyli są w trakcie przetwarzania) (jest zajęta w jednakowym stopniu jak kolejka Warehouse) - na jej podstawie można obliczyć całkowity czas przetwarzania zlecenia w sekundach, przykład wyników znajduje się w delivery_info.txt
+- jeśli robimy kill na procesie, który ma otwarty plik, to system operacyjny zamknie ten plik i nie powinno być problemów (ewentualnie, że jakieś najnowsze dane nie zostaną zapisane, ale u nas to nie problem)
+
+## Zad. 4 - synchronizacja procesów z wykorzystaniem monitorów
+
+- TBA
