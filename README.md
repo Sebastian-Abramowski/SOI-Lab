@@ -72,3 +72,7 @@ Wskazówki:
 ## Zad. 5 - zarządzanie pamięcią
 
 - TBA
+
+## Zad. 6 - konstrukcja systemu plików
+
+- TBA
