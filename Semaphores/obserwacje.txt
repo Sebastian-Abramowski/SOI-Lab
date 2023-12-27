@@ -26,22 +26,21 @@ W każdym przypadku kolejka Warehouse jest zawsze prawie pusta.
 ----
 
 Odpowiedzi na pytania:
-1. Przy jakiej wartości parametru X przepustowość systemu staje się niewystarczająca (tzn. 
+1. Przy jakiej wartości parametru X przepustowość systemu staje się niewystarczająca (tzn.
 kolejki się stale przepełniają)?
 
 Zależy to od tego ile czasu będziemy testować:
 Np.  dla testów trwiających 25 sekund - dla X < 2.9 s kolejka Orders była przepełniana
      dla testów trwiających 50 sekuund - dla X < 3 s kolejka Orders była przepełniana
      dla testów trwiających 100 sekund - dla X = 3.3 s kolejka Orders była w pojedycznych przypadkach przpełniana
-Wniosek: prędzej czy później kolejka Orders i tak się przepełni, chyba, że damy tak duże wartości odpoczynku dla klientów, że kolejka Warehouse przestanie być wąskim gardłem.
+Wniosek: prędzej czy później kolejka Orders i tak się przepełni, chyba, że damy tak duże wartości odpoczynku dla klientów, że kolejka zleceń przestanie być wąskim gardłem.
 
 2. Która kolejka okazuje się wąskim gardłem - kolejka zleceń, czy magazyn?
 
-Wąskim gardłem jest kolejka magazynu - prawie zawsze jest zapełniona w minimalnym stopniu, procesy wytwórzcze powinny szybciej przetwarzać pojedyncze zlecenie i wysyłać je do magazynu.
+Wąskim gardłem jest kolejka zleceń.
 
-3. Jak zależy czas obsługi (od zgłoszenia zlecenia do odbioru produktu przez kuriera) zleceń od 
+3. Jak zależy czas obsługi (od zgłoszenia zlecenia do odbioru produktu przez kuriera) zleceń od
 X?
 
 Im większy czas X (spanie clienta), tym mniejsze zapełnienie kolejki Orders, tym szybciej dane zlecenie zostanie obsłużone, trafi do magazynu i odebrane przez kuriera.
 Większe X -> mniejszy czas obsługi zleceń
-

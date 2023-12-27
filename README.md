@@ -56,4 +56,19 @@ Konkretnie do wykonanego zadania:
 
 ## Zad. 4 - synchronizacja procesów z wykorzystaniem monitorów
 
+- to samo co w poprzednim, ale z wykorzystaniem monitorów
+- jeden klient ma być priorytetowy
+
+Wskazówki:
+
+- gdy wywołujemy signal oraz jakiś wątek czeka na danym warunku, to ten oczekujący wątek od razu zaczyna kontynuować swoje
+  wykonywanie, a my w naszym poprzendim wątku próbujemy drugi raz otrzymać pozwolenie wejścia do monitora
+- gdy wątek, który został odblokowany, zakończy swoje działanie (przez leave() w monitorze), to wtedy w naszym poprzednim
+  wątku drugi raz wchodzimy to monitora i od razu z niego wychodzimy
+- czyli po wykonaniu signal, stan naszej kolejki może się zmienić
+- gdy wywołujemy signal oraz żaden wątek nie czeka na danym warunku to po prostu lecimy dalej
+- jeśli kilka wątków jest zablokowane na tym samym warunku, to nie ma pewności, który wątek zacznie się wykonywać jeśli warunek zostanie spełniony (to czy wstawianie z priorytetem działa, można zaobserwować, czy czas wstawiania jest regularnie mniejszy, gdy jeszcze nie dochodziło do zapełnienia kolejki)
+
+## Zad. 5 - zarządzanie pamięcią
+
 - TBA
