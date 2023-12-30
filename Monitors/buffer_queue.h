@@ -16,11 +16,14 @@ private:
     std::vector<int> queue;
     Condition full;
     Condition empty;
+    Condition priority;
 public:
     BufferQueue(std::string queueName);
 
     void push(int value, bool withPriority=false);
     void pop(int *value);
+    int getSecondElementValue();
+    int getFirstElementValue();
 
     friend std::ostream& operator<<(std::ostream &os, const BufferQueue &buffer);
 };

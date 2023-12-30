@@ -4,7 +4,7 @@
 #include "monitor.h"
 
 
-BufferQueue::BufferQueue(std::string queueName) :full(Condition()), empty(Condition()), 
+BufferQueue::BufferQueue(std::string queueName) :full(Condition()), empty(Condition()), priority(Condition()),
 name(queueName) {}
 
 void BufferQueue::push(int value, bool withPriority) {
@@ -13,8 +13,12 @@ void BufferQueue::push(int value, bool withPriority) {
     if (queue.size() == QUEUE_SIZE)
         this->wait(full);
     
-    if (withPriority)
+    if (withPriority) {
+        if (queue.size() >= 2 && queue.at(0) > queue.at(1))
+            this->wait(priority);
+
         queue.insert(queue.begin(), value);
+    }
     else 
         queue.push_back(value);
     
@@ -34,10 +38,24 @@ void BufferQueue::pop(int *value) {
     *value = queue.front();
     queue.erase(queue.begin());
 
+    this->signal(priority);
+
     if (queue.size() == QUEUE_SIZE - 1)
         this->signal(full);
 
     this->leave();
+}
+
+int BufferQueue::getSecondElementValue() {
+    if (queue.size() >= 2)
+        return queue.at(1);
+    return -1;
+}
+
+int BufferQueue::getFirstElementValue() {
+    if (queue.size())
+        return queue.at(0);
+    return -1;
 }
 
 std::ostream& operator<<(std::ostream &os, const BufferQueue &buffer) {

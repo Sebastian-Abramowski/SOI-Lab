@@ -1,0 +1,48 @@
+Odpowiedzi na pytania z zadania poprzedniego:
+
+Nadal wąskim gardłem jest kolejka zleceń;
+
+Nadal jeśli ustawimy czas spania klientów w okolicach 4 sekund, to kolejki nie będą przepełniane;
+
+Nadal większe X -> mniejszy czas obsługi zleceń;
+
+
+Porównanie czasów przetwarzania zamówień zwykłych i VIP:
+
+X = 2.5 sekund i X_VIP = 2.5 sekund:
+Po całkowitym zapełnieniu:
+- zlecenia normalne ~ 13/14 sekund
+- zlecenia priorytetowe ~ 2/3/4 sekund
+Przed zapełnieniem:
+- zlecenia normalne ~ 6/7 sekund
+- zlecenia priorytetowe ~ 2 sekund
+
+X = 2.5 sekund i X_VIP = 5 sekund:
+Po całkowitym zapełnieniu:
+- zlecenia normalne ~ 11/12/13 sekund
+- zlecenia priorytetowe ~ 2/3 sekund
+Przed zapełnieniem:
+- zlecenia normalne ~ 6/7 sekund
+- zlecenia priorytetowe ~ 2 sekund
+
+X = 2.5 sekund i X_VIP - 1.25 sekund:
+Po całkowitym zapełnieniu:
+- zlecenia normalne ~ 14/15/16 sekund
+- zlecenia priorytetowe ~ 3/4 sekundy
+Przed zapełnieniem:
+- zlecenia normalne ~ 6 sekund
+- zlecenia priorytetowe ~ 2 sekund
+
+
+Wnioski:
+- Jeśli zlecenia priorytetowe nie muszą czekać na swoją kolejka
+to są robione przez około 2 sekundy (w sytuacji przez zapełnieniem kolejki)
+
+Jak się ma X/X_VIP na czas przetwarzania zleceń normalnych
+w sytacji bliskich zapełnienia kolejek?
+większy X_VIP -> mniejszy czas obsłużenia zlecenia normalnego
+
+Wyjaśnienie:
+gdy mamy większy X_VIP, to znaczy
+że zlecenia priorytetowe pojawiają się rzadziej, czyli mniej przeszkadzają
+zleceniom normalnym

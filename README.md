@@ -58,6 +58,13 @@ Konkretnie do wykonanego zadania:
 
 - to samo co w poprzednim, ale z wykorzystaniem monitorów
 - jeden klient ma być priorytetowy
+- porównaj wyniki z wynikami z semaforów
+- zobacz różnice w obrabianiu zleceń z priorytetem
+- porównać czasy przetwarzania zamówień zwykłych z priorytetowymi w trzech sytuacjach
+
+Założenie:
+
+- w monitorze będzie znajdowała się zmienna warunkowo o nazwie priority, która będzie pilnować, aby w kolejce w jednej chwili znajdowało się tylko jedno zlecenie priorytetowe, kiedy zlecenie priorytetowe zostanie wyciągniete z kolejki, następne będzie mogło do niej trafić
 
 Wskazówki:
 
@@ -68,6 +75,11 @@ Wskazówki:
 - czyli po wykonaniu signal, stan naszej kolejki może się zmienić
 - gdy wywołujemy signal oraz żaden wątek nie czeka na danym warunku to po prostu lecimy dalej
 - jeśli kilka wątków jest zablokowane na tym samym warunku, to nie ma pewności, który wątek zacznie się wykonywać jeśli warunek zostanie spełniony (to czy wstawianie z priorytetem działa, można zaobserwować, czy czas wstawiania jest regularnie mniejszy, gdy jeszcze nie dochodziło do zapełnienia kolejki)
+
+Uwagi do kodu:
+
+- określenie czy odbierany przedmiot przez kuriera był zleceniem priorytetowym, działa wtedy gdy kolejka zleceń jest trochę zapełniona, jeśli cały czas w kolejce zleceń byłyby 1-2 elementy, to wtedy może przy wyjęciu z magazynu zlecenia, może ono nie być określone jako priorytetowe - nie robi to w naszym przypadku problemu (wtedy i tak zlecenia niepriorytetowe mają podobny czas obrobienia do priorytetowych)
+- idealnym rozwiązaniem byłyby kolejki, które przetrzymywałyby instancje jakieś klasy, a nie zwykłe inty, ale wtedy trzeba byłoby więcej zmieniać w porównaniu do poprzedniego zadania
 
 ## Zad. 5 - zarządzanie pamięcią
 
