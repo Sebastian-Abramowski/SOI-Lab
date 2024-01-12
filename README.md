@@ -83,8 +83,7 @@ Uwagi do kodu:
 
 ## Zad. 5 - zarządzanie pamięcią
 
-- TBA
-
-## Zad. 6 - konstrukcja systemu plików
-
-- TBA
+- zaimplementować algorytm przydziału pamięci worst fit
+- dodać wywołanie systemowe zmieniające algorytm przydziału pamięci (albo worst fit albo first fit)
+- dodaj wywołanie systemowe przedstawiające dziury w pamięci
+- wykonaj podane w poleceniu testy
